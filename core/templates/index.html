@@ -10,9 +10,16 @@
     </div>
 {% endif %}
 
-<h1>Товары</h1>
+<h1 style="display: flex; justify-content: space-between; align-items: center;">
+    <span>Товары</span>
+    <!-- Ссылка на новость -->
+    <span style="font-size: 1.2em;">
+        <a href="news1">НОВОСТЬ ПРО АЙТИ</a>
+    </span>
+</h1>
+
 {% for product in products %}
-    <div>{{ product.id }}. 
+    <div>{{ product.id }}.
         <a href="/product/{{ product.id }}/">{{ product.name }}</a>
          - {{ product.price }} сом
     </div>

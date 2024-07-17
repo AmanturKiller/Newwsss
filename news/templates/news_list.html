@@ -1,11 +1,20 @@
-<a href="/">Главная</a> |
-<a href="/costumers/">Покупатели</a> |
-<a href="{% url 'news-list' %}">Новости</a> |
-<a href="/admin/">Админка</a>
+{% extends 'base.html' %}
 
-<h1>Новости</h1>
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="{% static 'news.css' %}">
+</head>
+
+{% block content %}
+
 {% for obj in news %}
     <div>
         <a href="/new-detail/{{ obj.id }}/">{{ obj.title }}</a>    
     </div>
 {% endfor %}
+
+{% endblock %}

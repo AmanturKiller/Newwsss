@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column; /* Устанавливаем направление колонок по вертикали */
+    justify-content: center; /* Центрируем по вертикали */
+    align-items: center; /* Центрируем по горизонтали */
+    min-height: 100vh; /* Минимальная высота равная высоте окна браузера */
+    background-image: url('https://th.bing.com/th/id/OIP.RBz-Ikb0XOA3bTVftemMswHaJ4?w=900&h=1200&rs=1&pid=ImgDetMain'); /* замените путь на путь к вашему изображению */
+    background-size: cover; /* чтобы изображение занимало всю доступную область */
+    background-position: center; /* чтобы изображение было выровнено по центру */
+}
+
+.column {
+    width: 80%; /* Ширина колонок */
+    background-color: #ffffff; /* Цвет фона колонок */
+    padding: 20px; /* Внутренний отступ */
+    margin-bottom: 20px; /* Промежуток между колонками */
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+    text-align: center;
+    background-image: url('https://th.bing.com/th/id/R.9290899374122d6be607e0ffb1d37338?rik=eN2hFJWiokvzoA&pid=ImgRaw&r=0'); /* замените путь на путь к вашему изображению */
+    background-size: cover; /* чтобы изображение занимало всю доступную область */
+    background-position: center; /* чтобы изображение было выровнено по центру */
+}
+
+h1, h2, h3 {
+    margin-top: 0; /* Убираем верхний отступ у заголовков */
+}

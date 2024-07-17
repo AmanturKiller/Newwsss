@@ -53,3 +53,6 @@ def users_list(request):
     user_list = User.objects.all()
     context = {"users": user_list}
     return render(request, 'user_list.html', context)
+
+def news(request):
+    return render(request,'news1.html')

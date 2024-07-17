@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
 <h1>Страница одной новости</h1>
 <h2>{{ new.title }}</h2>
 <div>{{ new.article }}</div>
@@ -8,3 +12,5 @@
 {% for user in new.user_views.all %}
     <div>{{ user.username }}</div>
 {% endfor %}
+
+{% endblock %}
